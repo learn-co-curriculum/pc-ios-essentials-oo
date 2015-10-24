@@ -3,13 +3,9 @@
 ![cookie cutter](http://stephenmatlock.com/wp-content/uploads/2013/02/Cookie_Cutter_s.jpg)
 
 ## Object Orientation
-The answer is through a type of programming called object-oriented programming. It's a way a building new objects (alien enemies, Sim people, cars, etc.) by making "factories" that standardize how the objects are made. Programmers don't have to code every car in GTA individually, every Facebook account, or every Amazon payment. What they do is create a template for objects that can then be tailored without having to recreate all of the code for each new object. The same goes for applications like Facebook and Twitter.
+Object-oriented programming is a way of a building new objects (alien enemies, Sim people, cars, etc.) by making "factories" that standardize how the objects are made. Programmers don't have to code every car in GTA individually, every Facebook account, or every Amazon payment. What they do is create a template for objects that can then be tailored without having to recreate all of the code for each new object.
 
-Object Orientation is a way to organize, manipulate and store data. It's so powerful that it gives companies like Facebook the ability to do that - Have them name apps (Instagram, Snapchat, Square or Strip, Spotify). It's one of the most important and pervasive concepts in computer programming and supports all sorts of applications like Instagram and Facebook, to ESPN to payment apps like Amazon payment. In fact, you guys are going to build your own payment system tomorrow.
-
-Who knows how many people are on Facebook? Close to a quarter of the world is on Facebook (roughly 2billion). What do you think the average number of friends a user has? What about the number of photos? How many likes happen in a day? We're talking about trillions of pieces of data that Facebook tracks and stores on huge tracks on land that they bought literally just to store all their data.
-
-When you log in, how does Facebook know to your data? Your exact profile and data loaded for you and you alone, and not someone else's? How does that work? How in the world are they able to do that for 2 billion users?
+Object Orientation is a way to organize, manipulate and store data. It's so powerful that it gives companies like Facebook the ability to do that - Have them name apps (Instagram, Snapchat, Square or Strip, Spotify). It's one of the most important and pervasive concepts in computer programming and supports all sorts of applications like Instagram and Facebook, to ESPN to payment apps like Amazon payment.
 
 Imagine if we had to create a dictionary for every new Facebook user.  
 + Create an instance of a Facebook user with a hash
@@ -32,7 +28,6 @@ dan b = {
 ```
 We can now easily create a new "instance" of Dan.  Think of it like creating a new cookie with a cookie cutter.  
 + Objects have descriptors (properties) and actions (methods)
-+ Instance variables require one method to exist called the **reader** method:
 ```swift
   class User
   
@@ -40,15 +35,23 @@ We can now easily create a new "instance" of Dan.  Think of it like creating a n
     var email: String = ""
     var friends: Int = 0
     
-    Init(name: String, email: String, friends: Int){
+    init(name: String, email: String, friends: Int){
+     self.name = name
+     self.email = email
+     self.firends = friends
     }
     
   end
 ```
-+ If we want to be able to change the value of the instance variable like a user's age, a second method is required called a **writer** method:
++ Let's create a new instance of our User class.  We need to initilize it with the tree values we specified in the `Init()` method. The `Init()` method is what gets called when we say `User.new`.
+ 
 ```swift
-  lyel = User.New(name: "Lyel", email: "lyel@flatironschool.com, 2)
-  
+  lyel = User(name: "Lyel", email: "lyel@flatironschool.com, 2)
+```
+
+Cool.  So we initilized a new instance of the User class called lyel.  Here is how we can read or write the property values of our object.
+```swift
+
   print(lyel.name)
   print(lyel.email)
   lyel.email = "lyel@whitehouse.gov"
@@ -56,28 +59,35 @@ We can now easily create a new "instance" of Dan.  Think of it like creating a n
 
   end
 ```
+*'lyel' is now and **instance** of the of the **User** class.  It should have values for all of the properties and all of the mthods associated with that class.  We can also say that 'lyel' is an 'object.'  
+
+Now let's make a method for the User class.  Let's say we wanted a User to be able to send a love letter. 
+
+```swift
+ class User
+  
+    let name: String = ""
+    var email: String = ""
+    var friends: Int = 0
+    
+    init(name: String, email: String, friends: Int){
+        self.name = name
+      self.email = email
+      self.firends = friends
+    }
+    
+    func loveLetter(note: String) -> String{
+      return(note + " Love, \(self.name))
+    }
+  end
+
+print(lyel.loveLetter)
+```
 
 + Everything is an object
   * The string `"hi"` is actually `String.new("hi")`
-    * Shortcut is just syntactic sugar
-  * Same for arrays, integers, hashes, etc.
-  * We can add methods to existing classes
-```ruby
-  class Array
-    def say_items
-      puts "The items in this array are:"
-      self.each do |item|
-        puts item
-      end
-    end
-  end
-```
+**Can you think of other classes and instances that we've been using all along?**
 
+-> `UIViewContoller` is a class.  `ViewdidLoad` is a class method that tells a UIViewController instances what to do when...you guessed it, the View loads up on the ap!
 
-
-
-
-+ Get students to understand that anything can be turned into a class with attributes and actions. Pick 
-+ 
-+What classes have you seen already?  UIViewContoller is a class.  ViewdidLoad is a class method that tells a UIViewController instances what to do when...you guessed it, the View loads up on the ap!
 
