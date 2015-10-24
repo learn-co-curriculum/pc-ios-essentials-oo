@@ -24,16 +24,16 @@ dan b = {
 + Class Syntax:
 
 ```swift
-  class User
-  end
+  class User{
+  }
 
-  dan = User.new
+  dan = User()
 ```
 We can now easily create a new "instance" of Dan.  Think of it like creating a new cookie with a cookie cutter.  
 + Objects have descriptors (properties) and actions (methods)
 
 ```swift
-  class User
+  class User {
   
     let name: String = ""
     var email: String = ""
@@ -42,12 +42,12 @@ We can now easily create a new "instance" of Dan.  Think of it like creating a n
     init(name: String, email: String, friends: Int){
      self.name = name
      self.email = email
-     self.firends = friends
+     self.friends = friends
     }
     
-  end
+  }
 ```
-+ Let's create a new instance of our User class.  We need to initilize it with the tree values we specified in the `Init()` method. The `Init()` method is what gets called when we say `User.new`.
++ Let's create a new instance of our User class.  We need to initilize it with the tree values we specified in the `init()` method. The `init()` method is what gets called when we say `User.new`.
  
 ```swift
   lyel = User(name: "Lyel", email: "lyel@flatironschool.com, 2)
@@ -61,14 +61,14 @@ Cool.  So we initilized a new instance of the User class called lyel.  Here is h
   lyel.email = "lyel@whitehouse.gov"
   print(lyel.email)
 
-  end
+
 ```
 *'lyel' is now and **instance** of the of the **User** class.  It should have values for all of the properties and all of the mthods associated with that class.  We can also say that 'lyel' is an 'object.'  
 
 Now let's make a method for the User class.  Let's say we wanted a User to be able to send a love letter. 
 
 ```swift
- class User
+ class User {
   
     let name: String = ""
     var email: String = ""
@@ -83,7 +83,8 @@ Now let's make a method for the User class.  Let's say we wanted a User to be ab
     func loveLetter(note: String) -> String{
       return(note + " Love, \(self.name))
     }
-  end
+  
+  }
 
 print(lyel.loveLetter)
 ```
