@@ -9,6 +9,8 @@ Object Orientation is a way to organize, manipulate and store data. It's so powe
 
 Imagine if we had to create a dictionary for every new Facebook user.  
 + Create an instance of a Facebook user with a hash
+
+
 ```swift
 dan b = {
   :name => "Dan B",
@@ -20,6 +22,7 @@ dan b = {
 + It would take forever to build a hash for each Facebook user.
   * Instead we can make a standardized template using and class.
 + Class Syntax:
+
 ```swift
   class User
   end
@@ -28,6 +31,7 @@ dan b = {
 ```
 We can now easily create a new "instance" of Dan.  Think of it like creating a new cookie with a cookie cutter.  
 + Objects have descriptors (properties) and actions (methods)
+
 ```swift
   class User
   
