@@ -83,6 +83,12 @@ steph = {
 
 
 
-+ Get students to understand that anything can be turned into a class with attributes and actions. Pick a bunch of different items and make them say the attributes and actions for those classes.
-+ Wait to introduce attr_accessor until the next class so they can really dig their teeth into how reader and writer methods work.
++ Get students to understand that anything can be turned into a class with attributes and actions. Pick 
++ 
++What classes have you seen already?  UIViewContoller is a class.  ViewdidLoad is a class method that tells a UIViewController instances what to do when...you guessed it, the View loads up on the ap!
 
++Come up with at least the properties and two methods for the following:
++ An instagram post
++ A spotify playlist
++ A song in spotify
++ A snap from snapchat
