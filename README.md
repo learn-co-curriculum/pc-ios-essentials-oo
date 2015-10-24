@@ -81,8 +81,3 @@ We can now easily create a new "instance" of Dan.  Think of it like creating a n
 + 
 +What classes have you seen already?  UIViewContoller is a class.  ViewdidLoad is a class method that tells a UIViewController instances what to do when...you guessed it, the View loads up on the ap!
 
-+Come up with at least the properties and two methods for the following:
-+ An instagram post
-+ A spotify playlist
-+ A song in spotify
-+ A snap from snapchat
