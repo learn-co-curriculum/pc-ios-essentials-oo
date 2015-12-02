@@ -96,3 +96,5 @@ print(lyel.loveLetter)
 -> `UIViewContoller` is a class.  `ViewdidLoad` is a class method that tells a UIViewController instances what to do when...you guessed it, the View loads up on the ap!
 
 
+
+<a href='https://learn.co/lessons/pc-ios-essentials-oo' data-visibility='hidden'>View this lesson on Learn.co</a>
