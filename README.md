@@ -97,4 +97,4 @@ print(lyel.loveLetter)
 
 
 
-<a href='https://learn.co/lessons/pc-ios-essentials-oo' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/pc-ios-essentials-oo' title='Essentials'>Essentials</a> on Learn.co and start learning to code for free.</p>
